@@ -8,7 +8,7 @@ services:
         - "8080:80"
         volumes:
             # テーマをマウント
-            - "$PWD/MyDesign:/var/www/html/wp-content/themes/MyDesign"
+            - "./themes:/var/www/html/wp-content/themes"
             - "$PWD/.docker/backup:/tmp/backup"
             - "$PWD/.docker/log:/tmp/log"
             # プラグインをマウントしたい場合
