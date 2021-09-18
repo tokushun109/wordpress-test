@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="ja">
-<?php get_header(); ?>
-<?php get_template_part('includes/header'); ?>
+<html <?php language_attributes(); ?>>
 
-<body>
+<head>
+	<?php get_header(); ?>
+</head>
 
+<body <?php body_class(); ?>>
+	<?php get_template_part('includes/header'); ?>
 	<!-- Page Header -->
-	<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+	<header class="masthead" style="background-image: url('<?php echo get_eyechatch_with_default(); ?>')">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
